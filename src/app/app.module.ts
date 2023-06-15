@@ -12,6 +12,10 @@ import { CartComponent } from './screens/cart/cart/cart.component';
 import { LoginComponent } from './screens/login/login/login.component';
 import { NavbarComponent } from './shared/components/navbar/navbar/navbar.component';
 import { FooterComponent } from './shared/components/footer/footer/footer.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,11 @@ import { FooterComponent } from './shared/components/footer/footer/footer.compon
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatInputModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
