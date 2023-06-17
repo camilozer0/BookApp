@@ -18,6 +18,9 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatListModule } from '@angular/material/list';
+import { HomeComponent } from './screens/home/home.component';
+import { BooksComponent } from './screens/books/books.component';
+import { AuthorsComponent } from './screens/authors/authors.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { MatListModule } from '@angular/material/list';
     CartComponent,
     LoginComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    BooksComponent,
+    AuthorsComponent
   ],
   imports: [
     BrowserModule,

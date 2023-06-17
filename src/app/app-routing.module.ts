@@ -6,19 +6,18 @@ import { NewsComponent } from './screens/home/news/news/news.component';
 import { RecomendationsComponent } from './screens/home/recomendations/recomendations/recomendations.component';
 import { LoginComponent } from './screens/login/login/login.component';
 import { CartComponent } from './screens/cart/cart/cart.component';
-import { NavbarComponent } from './shared/components/navbar/navbar/navbar.component';
-import { FooterComponent } from './shared/components/footer/footer/footer.component';
+import { HomeComponent } from './screens/home/home.component';
+import { BooksComponent } from './screens/books/books.component';
+import { AuthorsComponent } from './screens/authors/authors.component';
 
 const routes: Routes = [
-  { path: '', component: AuthorComponent },
-  { path: 'author', component: AuthorComponent },
-  { path: 'banner', component: BannerComponent },
-  { path: 'news', component: NewsComponent },
-  { path: 'recomendations', component: RecomendationsComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'cart', component: CartComponent },
-  { path: 'navbar', component: NavbarComponent },
-  { path: 'footer', component: FooterComponent },
+  { path: 'books', component: BooksComponent },
+  { path: 'authors', component: AuthorsComponent },
+
 ];
 
 @NgModule({

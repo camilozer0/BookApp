@@ -1,13 +1,13 @@
 <mat-toolbar color="primary" class="top-fixed">
-    <button mat-flat-button color="primary">
+    <button mat-flat-button color="primary" routerLink="home">
         <mat-icon>book</mat-icon>
         <span>The bookStore App</span>
     </button>
     <div>
-        <button mat-flat-button color="primary">
+        <button mat-flat-button color="primary" routerLink="books">
             <span>libros</span>
         </button>
-        <button mat-flat-button color="primary">
+        <button mat-flat-button color="primary" routerLink="authors">
             <span>autores</span>
         </button>
     </div>
@@ -19,10 +19,10 @@
                 <mat-icon matSuffix color="primary" (click)="goSearch()" style="cursor: pointer;">search</mat-icon>
             </mat-form-field>
         </form>
-        <button mat-mini-fab color="primary" class="space">
+        <button mat-mini-fab color="primary" class="space" routerLink="login" routerLinkActive="on">
             <mat-icon>person</mat-icon>
         </button>
-        <button mat-mini-fab color="primary" class="space">
+        <button mat-mini-fab color="primary" class="space" routerLink="cart">
             <mat-icon matBadge="0" matBadgeColor="warn">shopping_cart</mat-icon>
         </button>
     </div>
